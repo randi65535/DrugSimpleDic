@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final int DATABASE_VERSION = 1;
-    private static final String DATABASE_NAME = "Drug_DB";
+    private static final String DATABASE_NAME = "word_db";
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -20,7 +20,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         try {
-            db.execSQL("CREATE TABLE Drug (_id Integer, db_recent_finded_word varchar(255) );");
+            db.execSQL("CREATE TABLE recent_word (_id Integer, db_recent_word varchar(255) );");
         } catch (Exception e) {
             Log.e("Database Error", "CREATE Error");
         }

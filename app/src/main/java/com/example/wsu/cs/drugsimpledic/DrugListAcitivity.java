@@ -6,10 +6,22 @@ import android.support.v7.app.AppCompatActivity;
 //서버에서 리스트뷰를 뿌릴 화면
 public class DrugListAcitivity extends AppCompatActivity {
 
+    //화면을 불러올 때 바로 실행되는 메소드
+    //초기화를 담당한다
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        //이전 액티비티에서 전달한 값을 전달 받는다.
+
+
+        //그 값을 가지고 API에 접근해서 리스트를 가져온다
+
+
+        //리스트를 가져온 것을 가지고 화면에 뿌린다.
+
     }
 
 }
